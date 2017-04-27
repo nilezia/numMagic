@@ -23,16 +23,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
     <TextView
         android:id="@+id/tvNumber"
-        android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:text="0"
 
-        android:text="0" />
+        android:textSize="18sp" />
+
     <Button
         android:id="@+id/btn_random"
         android:layout_width="wrap_content"
@@ -47,9 +46,12 @@
 
     <EditText
         android:id="@+id/edtInput"
-        android:layout_margin="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="0"
+        android:inputType="numberDecimal" />
 
 
     <Button
@@ -65,12 +67,12 @@
 
     <TextView
         android:id="@+id/tvResult"
-        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:background="#ddd"
         android:layout_marginTop="16dp"
+        android:background="#ddd"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
         android:text="Result" />
 
 </LinearLayout>
