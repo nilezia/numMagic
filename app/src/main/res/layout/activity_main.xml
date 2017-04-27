@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="app.im.example.nummagic.MainActivity">
 
@@ -11,16 +12,27 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
         android:text="์Number Magic"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
+
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="0" />
     <Button
         android:id="@+id/btn_random"
         android:layout_width="wrap_content"
@@ -32,12 +44,6 @@
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
-    <TextView
-        android:id="@+id/tvNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Number array" />
 
     <EditText
         android:id="@+id/edtInput"
@@ -60,6 +66,9 @@
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#ddd"
+        android:layout_marginTop="16dp"
         android:text="isCorrect" />
 
 </LinearLayout>
