@@ -47,6 +47,7 @@
 
     <EditText
         android:id="@+id/edtInput"
+        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -64,11 +65,12 @@
 
     <TextView
         android:id="@+id/tvResult"
+        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:background="#ddd"
         android:layout_marginTop="16dp"
-        android:text="isCorrect" />
+        android:text="Result" />
 
 </LinearLayout>
